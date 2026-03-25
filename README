@@ -1,0 +1,38 @@
+Usage: visito <file> <path>
+       visito - <path>
+
+       visito [-h|--help]|[-v|--version]
+
+Display value reachable via a specific path in JDN content.
+
+Parameters:
+
+  <file>                 path to `.jdn` file
+  <path>                 describes "path" to target
+  -                      read JDN content from standard input
+
+Options:
+
+  -h, --help             show this output
+  -v, --version          show version information
+
+Examples:
+
+  Show :name's associated value from `bundle/info.jdn`:
+
+  $ visito bundle/info.jdn ':name'
+
+  Show :name's associated value from standard input content:
+
+  $ cat bundle/info.jdn | visito - ':name'
+
+  Show the included path at index 0 from `.niche.jdn`:
+
+  $ visito .niche.jdn ':includes 0'
+
+  Show tag value for a specific vendored dependency in
+  `bundle/info.jdn`:
+
+  $ visito bundle/info.jdn \
+           ':vendored |(= (get $ :name) "niche") :tag'
+
