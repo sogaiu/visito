@@ -268,7 +268,7 @@
 
 
 
-(def version "2026-03-30_07-24-55")
+(def version "2026-04-01_10-15-01")
 
 (def usage
   `````
@@ -308,7 +308,7 @@
     `bundle/info.jdn`:
 
     $ visito bundle/info.jdn \
-             ':vendored |(= (get $ :name) "niche") :tag'
+             ':vendored |(= (get $ :name) "tweake") :tag'
 
   `````)
 

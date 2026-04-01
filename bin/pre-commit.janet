@@ -48,7 +48,7 @@
    #
    ~[[./visito
       bundle/info.jdn
-      `:vendored |(= (get $ :name) "niche") :tag`]
+      `:vendored |(= (get $ :name) "tweake") :tag`]
      "data/2.jdn"]])
 
 (var n-passed 0)

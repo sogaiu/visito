@@ -41,7 +41,7 @@
     `bundle/info.jdn`:
 
     $ visito bundle/info.jdn \
-             ':vendored |(= (get $ :name) "niche") :tag'
+             ':vendored |(= (get $ :name) "tweake") :tag'
 
   `````)
 
