@@ -1,3 +1,5 @@
+(import ./deval :as d)
+
 (defn parse-args
   [args]
   (def the-args (array ;args))
@@ -82,10 +84,12 @@
             nil))
         0)))
   #
+  (assertf (d/safe? path) "path might have unsafe elements: %n" path)
+  (def checked-path (eval path))
+  #
   (merge opts
          {:input input
           :top-level-index top-level-index
-          # XXX: is this `eval` use likely to be a problem?
-          :path (eval path)
+          :path checked-path
           :rest the-args}))
 
