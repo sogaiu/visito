@@ -21,8 +21,8 @@
    :paths [["spork/sh-dsl.janet" "bin/"]]}
   {:name "tweake"
    :url "https://github.com/sogaiu/tweake"
-   :tag "fb10fcc682dc0789a4df4b87cde30da307697c72"
-   :paths [["src/deval.janet" "src/"]
+   :tag "dab6256d4933ed8d5ada5b8afce0bcd6de465cc2"
+   :paths [["src/fencer.janet" "src/"]
            ["src/get.janet" "src/"]
            ["src/traverse.janet" "src/"]]}]
 

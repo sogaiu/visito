@@ -1,4 +1,4 @@
-(import ./deval :as d)
+(import ./fencer :as f)
 
 (defn parse-args
   [args]
@@ -84,7 +84,7 @@
             nil))
         0)))
   #
-  (assertf (d/safe? path) "path might have unsafe elements: %n" path)
+  (assertf (f/limited? path) "path might have unsafe elements: %n" path)
   (def checked-path (eval path))
   #
   (merge opts
