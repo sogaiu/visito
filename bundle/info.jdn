@@ -5,8 +5,9 @@
  :vendored
  [{:name "tweake"
    :url "https://github.com/sogaiu/tweake"
-   :tag "48a3e017bc57ea294e89ae671907ce18c4eebd96"
-   :paths [["src/get.janet" "src/"]
+   :tag "fb10fcc682dc0789a4df4b87cde30da307697c72"
+   :paths [["src/deval.janet" "src/"]
+           ["src/get.janet" "src/"]
            ["src/traverse.janet" "src/"]]}]
 
  :binscripts
